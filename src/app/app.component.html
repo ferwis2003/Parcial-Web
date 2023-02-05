@@ -1,0 +1,46 @@
+  <br>
+  <div class="container card text-bg-light mb-3 "style="width: auto; opacity: 50%;">
+    <br>
+    <h2 class="h1">Datos Personales.</h2>
+
+    <img class="foto" src="https://i.ibb.co/88vqnhT/practica.jpg" alt="practica">
+
+    <table class="table">
+      <thead>
+      <tr>
+          <th scope="col">
+            Nombre
+          </th>
+          <th>
+            Apellido
+          </th>
+          <th >
+            Fecha de Nacimiento
+          </th>
+          <th>
+            Telefono
+          </th>
+          <th>
+            Email
+          </th>
+          <th>
+            Signo del Zodiaco
+          </th>
+        </tr>
+      </thead>
+        <tbody *ngFor="let personal of Datos">
+          <tr>
+            <td>{{personal.nombre}}</td>
+            <td>{{personal.apellido}}</td>
+            <td>{{personal.fecha_nacimiento}}</td>
+            <td>{{personal.telefono}}</td>
+            <td>{{personal.email}}</td>
+            <td>{{personal.signo_zodiacal}}</td>
+          </tr>
+
+        </tbody>
+    </table>
+
+
+  </div>
+<router-outlet></router-outlet>
